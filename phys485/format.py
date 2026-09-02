@@ -62,7 +62,7 @@ def look_nice(axis, xlabel, ylabel, title, caption=None):
     axis.set_title(title, size=16)
     axis.tick_params(axis="both", labelsize=10)
     axis.legend(loc="best")
-    axis.grid(True)
+    axis.grid(True, ls = "--")
 
     if caption:
         bbox = axis.get_position()
